@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1020">
-  <meta name="description" content="Profile của Nguyễn Mạnh Cường, sinh viên Kỹ thuật phần mềm tại VKU với kinh nghiệm dựng video CapCut, affiliate và bán hàng trên TikTok Shop.">
-  <title>Nguyễn Mạnh Cường — Profile</title>
+  <meta name="description" content="Portfolio Nguyễn Mạnh Cường, sinh viên Kỹ thuật phần mềm tại VKU. Dự án Java, lập trình mạng thời gian thực, thương mại điện tử và kinh nghiệm sáng tạo nội dung.">
+  <title>Nguyễn Mạnh Cường — Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="assets/gsap.min.js" defer></script>
@@ -21,9 +21,10 @@
         <span>Mạnh Cường</span>
       </a>
       <nav class="nav" aria-label="Điều hướng chính">
-        <a href="#gioi-thieu" aria-current="location">Giới thiệu</a>
-        <a href="#hoc-van">Học vấn</a>
+        <a href="#du-an">Dự án</a>
+        <a href="#ky-nang">Kỹ năng</a>
         <a href="#kinh-nghiem">Kinh nghiệm</a>
+        <a href="#lien-he">Liên hệ</a>
       </nav>
     </div>
     <div class="reading-progress" aria-hidden="true"></div>
@@ -39,8 +40,11 @@
               <span class="title-mask"><span>Nguyễn</span></span>
               <span class="title-mask"><span>Mạnh Cường</span></span>
             </h1>
-            <p class="hero-description">Mình học Kỹ thuật phần mềm tại VKU và có kinh nghiệm dựng video bằng CapCut, làm affiliate và bán hàng trên TikTok&nbsp;Shop.</p>
-            <a class="button button-primary" href="#kinh-nghiem">Xem kinh nghiệm</a>
+            <p class="hero-description">Sinh viên VKU, tập trung vào Java, backend và ứng dụng thời gian thực. Mình cũng dựng video bằng CapCut, làm affiliate và vận hành TikTok&nbsp;Shop.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#du-an">Xem dự án</a>
+              <a class="button button-outline" href="#lien-he">Liên hệ</a>
+            </div>
           </div>
           <figure class="hero-art" aria-hidden="true">
             <div class="art-reveal">
@@ -61,6 +65,54 @@
       </div>
     </section>
 
+    <section id="du-an" class="work-showcase" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="work-heading">
+          <h2 id="work-title">Dự án tiêu biểu</h2>
+          <p>Từ ứng dụng desktop với Java đến hệ thống thương mại điện tử.</p>
+        </div>
+        <div class="featured-projects">
+          <article class="project project-network">
+            <div class="project-diagram network-diagram" aria-hidden="true">
+              <div class="diagram-plane">
+                <div class="network-node"><span></span><b>Máy A</b></div>
+                <div class="network-channels">
+                  <div class="network-channel"><b>TCP</b><i class="network-packet"></i></div>
+                  <div class="network-channel"><b>UDP</b><i class="network-packet"></i></div>
+                </div>
+                <div class="network-node"><span></span><b>Máy B</b></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-field">Desktop &amp; lập trình mạng</p>
+              <h3>Nhắn tin và gọi thoại realtime</h3>
+              <p>Ứng dụng desktop dùng TCP để gửi tin nhắn và UDP để truyền âm thanh, với socket đa luồng xử lý các kết nối đồng thời.</p>
+              <ul class="tags" aria-label="Công nghệ"><li>Java</li><li>TCP/UDP</li><li>Đa luồng</li></ul>
+            </div>
+          </article>
+          <article class="project project-commerce">
+            <div class="project-diagram commerce-diagram" aria-hidden="true">
+              <div class="diagram-plane">
+                <div class="commerce-core">Spring Boot</div>
+                <div class="commerce-bus"><i></i><i></i><i></i></div>
+                <div class="commerce-modules"><span>OpenCV</span><span>Blockchain</span><span>ZaloPay</span></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-field">Full-stack &amp; tích hợp</p>
+              <h3>Thương mại điện tử tích hợp AI</h3>
+              <p>Nền tảng Spring Boot và Vue.js tích hợp đăng nhập bằng nhận diện khuôn mặt, thanh toán qua blockchain và ZaloPay Sandbox.</p>
+              <ul class="tags" aria-label="Công nghệ"><li>Spring Boot</li><li>Vue.js</li><li>PostgreSQL</li><li>Python</li></ul>
+            </div>
+          </article>
+        </div>
+        <div class="more-projects">
+          <article><p class="project-field">Java desktop</p><h3>Đặt món và nhắn tin cơ bản</h3><p>Thực hành Java Core và OOP qua chức năng gọi món, quản lý đơn hàng và nhắn tin.</p></article>
+          <article><p class="project-field">Web responsive</p><h3>CuongLocNuoc</h3><p>Website giới thiệu sản phẩm và dịch vụ lọc nước, xây dựng với JavaScript và Tailwind CSS.</p></article>
+        </div>
+      </div>
+    </section>
+
     <section id="hoc-van" class="education" aria-labelledby="education-title">
       <div class="shell education-inner">
         <div class="education-copy">
@@ -73,10 +125,22 @@
           <div class="academic-glow" aria-hidden="true"></div>
           <span class="academic-type" aria-hidden="true">VKU</span>
           <dl class="academic-info">
-            <div><dt>Chuyên ngành</dt><dd>Software Engineering</dd></div>
-            <div><dt>GPA</dt><dd>3.1</dd></div>
+            <div><dt>Giai đoạn đào tạo</dt><dd>2023–2028</dd></div>
+            <div><dt>GPA</dt><dd>3.1 / 4.0</dd></div>
           </dl>
         </div>
+      </div>
+    </section>
+
+    <section id="ky-nang" class="skills" aria-labelledby="skills-title">
+      <div class="shell skills-inner">
+        <h2 id="skills-title">Kỹ năng</h2>
+        <ul class="skill-list">
+          <li><h3>Backend &amp; dữ liệu</h3><p>Java, Spring Boot, Node.js, REST API, PostgreSQL, MySQL</p></li>
+          <li><h3>Frontend</h3><p>JavaScript, TypeScript, Vue.js, HTML, CSS, Tailwind CSS</p></li>
+          <li><h3>Mạng &amp; tích hợp</h3><p>C/C++, socket TCP/UDP, đa luồng, Python/OpenCV, ZaloPay Sandbox</p></li>
+          <li><h3>Nội dung &amp; thương mại</h3><p>CapCut, Canva, affiliate đa kênh, TikTok Shop, SEO nội dung</p></li>
+        </ul>
       </div>
     </section>
 
@@ -97,17 +161,17 @@
               <article id="panel-edit" class="editor-panel">
                 <p class="track-label">2 năm kinh nghiệm</p>
                 <h3>Dựng video<br>bằng CapCut.</h3>
-                <p>Từ cắt ghép và căn nhịp đến hoàn thiện video ngắn bằng CapCut.</p>
+                <p>Quay sản phẩm, cắt ghép và căn nhịp video ngắn phục vụ nội dung affiliate và TikTok Shop.</p>
               </article>
               <article id="panel-affiliate" class="editor-panel">
                 <p class="track-label">Tiếp thị liên kết</p>
                 <h3>Affiliate<br>marketing.</h3>
-                <p>Mình có kinh nghiệm làm tiếp thị liên kết, kết nối nội dung giới thiệu sản phẩm với đường dẫn mua hàng.</p>
+                <p>Làm tiếp thị liên kết đa kênh, kết hợp video giới thiệu sản phẩm và tối ưu nội dung tìm kiếm.</p>
               </article>
               <article id="panel-shop" class="editor-panel">
                 <p class="track-label">3 tháng kinh nghiệm</p>
                 <h3>Bán hàng trên<br>TikTok Shop.</h3>
-                <p>Mình đã trực tiếp bán hàng trên sàn thương mại điện tử TikTok Shop.</p>
+                <p>Trực tiếp vận hành gian hàng, quay video sản phẩm, xử lý đơn và chăm sóc khách hàng.</p>
               </article>
             </div>
             <div class="editor-visual" aria-hidden="true">
@@ -123,6 +187,19 @@
             <div class="timeline-track"><span></span><span></span><span></span></div>
             <div class="timeline-playhead"></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lien-he" class="contact" aria-labelledby="contact-title">
+      <div class="shell contact-inner">
+        <div>
+          <p class="section-label"><span aria-hidden="true"></span>Đà Nẵng, Việt Nam</p>
+          <h2 id="contact-title">Liên hệ</h2>
+        </div>
+        <div class="contact-copy">
+          <p>Mình quan tâm đến cơ hội thực tập phát triển phần mềm và các dự án sáng tạo nội dung.</p>
+          <a class="contact-email" href="mailto:manhcuongnguyen2205@gmail.com">manhcuongnguyen2205@gmail.com</a>
         </div>
       </div>
     </section>
