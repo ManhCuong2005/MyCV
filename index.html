@@ -1,18 +1,138 @@
-<!DOCTYPE html>
-<html lang="vi" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236366f1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='10'/><path d='m10 15 5-3-5-3v6Z'/></svg>" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Cá Nhân | Digital CV & Portfolio</title>
-    <meta name="description" content="Trang web Profile & CV điện tử cá nhân - Giới thiệu kỹ năng, kinh nghiệm và các dự án nổi bật." />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300 min-h-screen">
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Profile của Nguyễn Mạnh Cường, sinh viên Kỹ thuật phần mềm tại VKU với kinh nghiệm dựng video CapCut, affiliate và bán hàng trên TikTok Shop.">
+  <title>Nguyễn Mạnh Cường — Profile</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="assets/gsap.min.js" defer></script>
+  <script src="assets/ScrollTrigger.min.js" defer></script>
+  <script src="profile.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Đến nội dung</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Mạnh Cường, về đầu trang">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M6 25V11l5.5 7 5.5-7v14m13-12a5 5 0 0 0-9 3v4a5 5 0 0 0 9 3" stroke="currentColor" stroke-width="2.35" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span>Mạnh Cường</span>
+      </a>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="#gioi-thieu" aria-current="location">Giới thiệu</a>
+        <a href="#hoc-van">Học vấn</a>
+        <a href="#kinh-nghiem">Kinh nghiệm</a>
+      </nav>
+    </div>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section id="gioi-thieu" class="intro" aria-labelledby="intro-title">
+      <div class="shell">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="hero-role"><span aria-hidden="true"></span>Sinh viên Kỹ thuật phần mềm</p>
+            <h1 id="intro-title">
+              <span class="title-mask"><span>Nguyễn</span></span>
+              <span class="title-mask"><span>Mạnh Cường</span></span>
+            </h1>
+            <p class="hero-description">Mình học Kỹ thuật phần mềm tại VKU và có kinh nghiệm dựng video bằng CapCut, làm affiliate và bán hàng trên TikTok&nbsp;Shop.</p>
+            <a class="button button-primary" href="#kinh-nghiem">Xem kinh nghiệm</a>
+          </div>
+          <figure class="hero-art" aria-hidden="true">
+            <div class="art-reveal">
+              <div class="art-parallax">
+                <div class="art-fallback"></div>
+                <img class="film-image" src="assets/film.png" alt="" width="1122" height="1402" fetchpriority="high">
+              </div>
+            </div>
+            <div class="viewfinder"><i></i><i></i><i></i><i></i></div>
+            <span class="art-center">+</span>
+          </figure>
+        </div>
+        <dl class="metrics">
+          <div><dt>GPA tại VKU</dt><dd>3.1</dd></div>
+          <div><dt>Dựng video bằng CapCut</dt><dd>2 <span>năm</span></dd></div>
+          <div><dt>Bán hàng trên TikTok Shop</dt><dd>3 <span>tháng</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="hoc-van" class="education" aria-labelledby="education-title">
+      <div class="shell education-inner">
+        <div class="education-copy">
+          <p class="section-label"><span aria-hidden="true"></span>Học vấn</p>
+          <h2 id="education-title">Kỹ thuật<br>phần mềm.</h2>
+          <p>Trường Đại học Công nghệ Thông tin và Truyền thông Việt – Hàn.</p>
+        </div>
+        <div class="academic-frame">
+          <div class="academic-grid" aria-hidden="true"></div>
+          <div class="academic-glow" aria-hidden="true"></div>
+          <span class="academic-type" aria-hidden="true">VKU</span>
+          <dl class="academic-info">
+            <div><dt>Chuyên ngành</dt><dd>Software Engineering</dd></div>
+            <div><dt>GPA</dt><dd>3.1</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="kinh-nghiem" class="experience" aria-labelledby="experience-title">
+      <div class="shell">
+        <h2 id="experience-title">Kinh nghiệm<span>.</span></h2>
+        <div class="editor" data-track="edit">
+          <div class="editor-top">
+            <span class="editor-label"><span aria-hidden="true"></span>Lĩnh vực</span>
+            <div class="editor-tabs" hidden>
+              <button type="button" id="tab-edit" aria-controls="panel-edit" data-track="edit">Dựng video</button>
+              <button type="button" id="tab-affiliate" aria-controls="panel-affiliate" data-track="affiliate">Affiliate</button>
+              <button type="button" id="tab-shop" aria-controls="panel-shop" data-track="shop">TikTok Shop</button>
+            </div>
+          </div>
+          <div class="editor-body">
+            <div class="editor-panels">
+              <article id="panel-edit" class="editor-panel">
+                <p class="track-label">2 năm kinh nghiệm</p>
+                <h3>Dựng video<br>bằng CapCut.</h3>
+                <p>Từ cắt ghép và căn nhịp đến hoàn thiện video ngắn bằng CapCut.</p>
+              </article>
+              <article id="panel-affiliate" class="editor-panel">
+                <p class="track-label">Tiếp thị liên kết</p>
+                <h3>Affiliate<br>marketing.</h3>
+                <p>Mình có kinh nghiệm làm tiếp thị liên kết, kết nối nội dung giới thiệu sản phẩm với đường dẫn mua hàng.</p>
+              </article>
+              <article id="panel-shop" class="editor-panel">
+                <p class="track-label">3 tháng kinh nghiệm</p>
+                <h3>Bán hàng trên<br>TikTok Shop.</h3>
+                <p>Mình đã trực tiếp bán hàng trên sàn thương mại điện tử TikTok Shop.</p>
+              </article>
+            </div>
+            <div class="editor-visual" aria-hidden="true">
+              <div class="monitor-grid"></div>
+              <div class="track-glyph">
+                <svg class="glyph glyph-edit" viewBox="0 0 100 100" fill="none"><rect x="13" y="22" width="74" height="56" rx="9"/><path d="M30 22v56m40-56v56M13 40h17M13 60h17m40-20h17M70 60h17m-45-20 17 10-17 10z"/></svg>
+                <svg class="glyph glyph-affiliate" viewBox="0 0 100 100" fill="none"><path d="m46 32 12-12a15 15 0 0 1 22 22L64 58a15 15 0 0 1-22 0m12 10L42 80a15 15 0 0 1-22-22l16-16a15 15 0 0 1 22 0m-18 18 20-20"/></svg>
+                <svg class="glyph glyph-shop" viewBox="0 0 100 100" fill="none"><path d="M24 35h52l6 47H18l6-47Z"/><path d="M37 41V29a13 13 0 0 1 26 0v12M43 61l6 6 12-12"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="editor-timeline" aria-hidden="true">
+            <div class="timeline-track"><span></span><span></span><span></span></div>
+            <div class="timeline-playhead"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <p>Nguyễn Mạnh Cường</p>
+      <a href="#top">Về đầu trang</a>
+    </div>
+  </footer>
+</body>
 </html>
